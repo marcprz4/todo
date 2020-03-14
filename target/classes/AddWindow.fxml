@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="209.0" prefWidth="318.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.app.AddWindowController">
+   <children>
+      <Button layoutX="141.0" layoutY="170.0" mnemonicParsing="false" onAction="#addTask" text="add" />
+      <TextArea fx:id="textArea" layoutX="16.0" layoutY="14.0" prefHeight="147.0" prefWidth="286.0" />
+      <CheckBox fx:id="important" layoutX="229.0" layoutY="162.0" mnemonicParsing="false" text="important" />
+   </children>
+</AnchorPane>

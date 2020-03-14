@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<!--        xmlns:fx="http://javafx.com/fxml"-->
+<!--            fx:controller="com.app.MainWindowController"-->
+<!--            prefHeight="400.0" prefWidth="600.0">-->
+<!--</AnchorPane>-->
+
+<AnchorPane prefHeight="587.0" prefWidth="505.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.app.MainWindowController">
+   <children>
+      <Button layoutX="357.0" layoutY="149.0" mnemonicParsing="false" onAction="#addTask" prefHeight="42.0" prefWidth="54.0" text="add" />
+      <Button layoutX="420.0" layoutY="149.0" mnemonicParsing="false" onAction="#deleteTask" prefHeight="42.0" prefWidth="54.0" text="delete" />
+      <TableView fx:id="table" editable="true" layoutY="204.0" onMouseReleased="#updateTable" prefHeight="378.0" prefWidth="505.0">
+        <columns>
+          <TableColumn fx:id="doneCol" prefWidth="100.0" text="done" />
+          <TableColumn fx:id="textCol" prefWidth="332.0" text="task" />
+            <TableColumn fx:id="prioCol" prefWidth="72.0" text="priority" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
