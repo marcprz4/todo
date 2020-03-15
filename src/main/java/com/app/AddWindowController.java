@@ -28,6 +28,7 @@ public class AddWindowController {
             Task task = new Task();
             task.setDone(false);
             task.setImportant(important.isSelected());
+//            String text=
             task.setText(textArea.getText());
             textArea.getScene().getWindow().hide();
             manager.save(task);
