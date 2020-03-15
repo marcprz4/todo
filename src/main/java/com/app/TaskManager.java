@@ -28,7 +28,11 @@ public class TaskManager {
         repo.deleteById(id);
     }
 
-    @Modifying
-    @Query("update Task t set t.done=?1, t.important=?2, t.text=?3 where t.id=?4")
-    public void updateById(Boolean done, Boolean important, String text, Long id) {}
+    public void update(Task task) {
+        Task tempTask=repo.findById(task.getId()).get();
+        if(tempTask!=null) {
+            tempTask.copyObject(task);
+            repo.save(tempTask);
+        }
+    }
 }

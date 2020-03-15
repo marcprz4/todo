@@ -48,4 +48,11 @@ public class Task {
     public void setImportant(Boolean important) {
         this.important = important;
     }
+
+    public void copyObject(Task task) {
+        this.done=task.done;
+        this.id=task.id;
+        this.important=task.important;
+        this.text=task.text;
+    }
 }
