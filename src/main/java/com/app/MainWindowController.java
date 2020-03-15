@@ -42,7 +42,7 @@ public class MainWindowController implements Initializable {
     @FXML
     private TableColumn<Task, Boolean> doneCol;
     @FXML
-    private TableColumn textCol;
+    private TableColumn<Task, String> textCol;
     @FXML
     private TableColumn<Task, Boolean> prioCol;
 
@@ -100,7 +100,7 @@ public class MainWindowController implements Initializable {
                     }
                 });
 
-        textCol.setCellValueFactory(new PropertyValueFactory<>("done"));
+        textCol.setCellValueFactory(new PropertyValueFactory<>("text"));
 
         prioCol.setCellValueFactory(new Callback<TableColumn.CellDataFeatures<Task, Boolean>, ObservableValue<Boolean>>() {
 
